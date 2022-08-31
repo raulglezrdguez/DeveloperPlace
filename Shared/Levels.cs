@@ -1,5 +1,6 @@
 namespace DeveloperPlace.Shared;
 
+// developer levels
 public enum Levels
 {
     Trainee,

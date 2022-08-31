@@ -41,72 +41,6 @@
         }
       },
       {
-        "HashCode": -964984298,
-        "Kind": "Components.Component",
-        "Name": "DeveloperPlace.Client.Pages.Counter",
-        "AssemblyName": "DeveloperPlace.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DeveloperPlace.Client.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": -863593667,
-        "Kind": "Components.Component",
-        "Name": "DeveloperPlace.Client.Pages.Counter",
-        "AssemblyName": "DeveloperPlace.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "DeveloperPlace.Client.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DeveloperPlace.Client.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 489297898,
-        "Kind": "Components.Component",
-        "Name": "DeveloperPlace.Client.Pages.FetchData",
-        "AssemblyName": "DeveloperPlace.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DeveloperPlace.Client.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 1953494992,
-        "Kind": "Components.Component",
-        "Name": "DeveloperPlace.Client.Pages.FetchData",
-        "AssemblyName": "DeveloperPlace.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "DeveloperPlace.Client.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DeveloperPlace.Client.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1378853993,
         "Kind": "Components.Component",
         "Name": "DeveloperPlace.Client.Pages.Index",
@@ -13656,21 +13590,6 @@
     {
       "FilePath": "/home/raul/projects/dotnet/DeveloperPlace/Client/Pages/Index.razor",
       "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/home/raul/projects/dotnet/DeveloperPlace/Client/Pages/FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/home/raul/projects/dotnet/DeveloperPlace/Client/Pages/Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/home/raul/projects/dotnet/DeveloperPlace/Client/Shared/SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
       "FileKind": "component"
     },
     {

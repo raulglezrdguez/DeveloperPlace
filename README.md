@@ -1,0 +1,1 @@
+- DeveloperPlace app developed with Blazor

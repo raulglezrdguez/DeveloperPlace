@@ -9,7 +9,7 @@ public static class DebugginExtensions
         WriteIndented = true
     };
 
-    public static string toJson(this object obj, JsonSerializerOptions options) =>
+    public static string ToJson(this object obj) =>
         JsonSerializer.Serialize(obj, options);
 
 }

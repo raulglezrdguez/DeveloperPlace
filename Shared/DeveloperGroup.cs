@@ -8,4 +8,7 @@ public class DeveloperGroup
     public List<int> Members { get; set; } = new List<int>();
     // is the group closed
     public bool GroupClosed { get; set; } = false;
+    // add developer id to this group members
+    public void Add(int developerId) => Members.Add(developerId);
+
 }

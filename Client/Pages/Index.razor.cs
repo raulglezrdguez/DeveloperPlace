@@ -16,4 +16,14 @@ public partial class Index : ComponentBase
         State.DeveloperList.Add(new Developer(4, "Carl", 400, Levels.Senior));
         State.DeveloperList.Add(new Developer(5, "Elena", 500, Levels.Leader));
     }
+
+    private string LevelImage(Levels level)
+    {
+        return $"images/${level.ToString().ToLower()}.png";
+    }
+
+    private void SelectDeveloper(Developer developer)
+    {
+        State.Group.Add(developer.Id);
+    }
 }

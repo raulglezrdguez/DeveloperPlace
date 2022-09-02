@@ -74,17 +74,21 @@
 <fieldset>
     <div class="row mb-2">
         <label for="name" class="col-2">Name</label>
-        <input id="name" @bind="State.Group.Customer.Name" />
+        <input id="name" class="col-6" @bind="State.Group.Customer.Name" />
     </div>
     <div class="row mb-2">
         <label for="street" class="col-2">Street</label>
-        <input id="street" @bind="State.Group.Customer.Street" />
+        <input id="street" class="col-6"  @bind="State.Group.Customer.Street" />
     </div>
     <div class="row mb-2">
         <label for="city" class="col-2">City</label>
-        <input id="city" @bind="State.Group.Customer.City" />
+        <input id="city" class="col-6" @bind="State.Group.Customer.City" />
     </div>
-    <button class="btn btn-primary" @onclick="@(() => PlaceOrder())">Place order</button>
+    <div class="row mb-2">
+        <div class="col-4"></div>
+        <button class="btn btn-primary col-4" @onclick="@(() => PlaceOrder())">Place order</button>
+        <div class="col-4"></div>
+    </div>
 </fieldset>
 
 @* End customer entry *@

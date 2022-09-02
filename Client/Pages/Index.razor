@@ -71,26 +71,46 @@
 
 <h1>Please enter your details</h1>
 
+<EditForm Model="@State.Group.Customer" OnValidSubmit="PlaceOrder">
+
+    <DataAnnotationsValidator />
+
+    <ValidationSummary />
 <fieldset>
     <div class="row mb-2">
         <label for="name" class="col-2">Name</label>
-        <input id="name" class="col-6" @bind="State.Group.Customer.Name" />
+        <InputText id="name" class="col-6" @bind-Value="@State.Group.Customer.Name" />
+    </div>
+    <div class="row mb-2">
+        <div class="col-6 offset-2">
+            <ValidationMessage For="@(() => State.Group.Customer.Name)" />
+        </div>
     </div>
     <div class="row mb-2">
         <label for="street" class="col-2">Street</label>
-        <input id="street" class="col-6"  @bind="State.Group.Customer.Street" />
+        <InputText id="street" class="col-6"  @bind-Value="@State.Group.Customer.Street" />
+    </div>
+    <div class="row mb-2">
+        <div class="col-6 offset-2">
+            <ValidationMessage For="@(() => State.Group.Customer.Street)" />
+        </div>
     </div>
     <div class="row mb-2">
         <label for="city" class="col-2">City</label>
-        <input id="city" class="col-6" @bind="State.Group.Customer.City" />
+        <InputText id="city" class="col-6" @bind-Value="@State.Group.Customer.City" />
+    </div>
+    <div class="row mb-2">
+        <div class="col-6 offset-2">
+            <ValidationMessage For="@(() => State.Group.Customer.City)" />
+        </div>
     </div>
     <div class="row mb-2">
         <div class="col-4"></div>
-        <button class="btn btn-primary col-4" @onclick="@(() => PlaceOrder())">Place order</button>
+        <button type="submit" class="btn btn-primary col-4">Place order</button>
         <div class="col-4"></div>
     </div>
 </fieldset>
-
+</EditForm>
 @* End customer entry *@
 
 @State.ToJson()

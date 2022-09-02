@@ -9,4 +9,8 @@ public class State
     public DeveloperGroup Group { get; } = new DeveloperGroup();
     // user interface
     public UI UI { get; } = new UI();
+
+    // returns total group salary 
+    public decimal TotalSalary() =>
+        Group.Members.Sum(id => DeveloperList.GetDeveloper(id)!.Salary);
 }

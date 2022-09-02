@@ -28,4 +28,9 @@ public partial class Index : ComponentBase
         State.Group.Add(developer.Id);
         Console.WriteLine(State.Group.Members.Count);
     }
+
+    private void RemoveFromGroup(int pos)
+    {
+        State.Group.RemoveAt(pos);
+    }
 }

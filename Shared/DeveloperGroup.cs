@@ -11,4 +11,7 @@ public class DeveloperGroup
     // add developer id to this group members
     public void Add(int developerId) => Members.Add(developerId);
 
+    // remove a developer at position pos
+    public void RemoveAt(int pos) => Members.RemoveAt(pos);
+
 }

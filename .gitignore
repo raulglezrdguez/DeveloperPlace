@@ -1,6 +1,10 @@
 .vs/
 bin/
+Client/bin
+Shared/bin
 obj/
+Client/obj
+Shared/obj
 *.user
 artifacts/
 .vscode/

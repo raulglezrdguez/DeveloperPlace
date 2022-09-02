@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using DeveloperPlace.Shared;
 
-namespace DeveloperPlace.Client;
+namespace DeveloperPlace.Client.Pages;
 
 
 public partial class Index : ComponentBase
@@ -19,11 +19,13 @@ public partial class Index : ComponentBase
 
     private string LevelImage(Levels level)
     {
-        return $"images/${level.ToString().ToLower()}.png";
+        return $"images/{level.ToString().ToLower()}.png";
     }
 
     private void SelectDeveloper(Developer developer)
     {
+        Console.WriteLine(developer.Name);
         State.Group.Add(developer.Id);
+        Console.WriteLine(State.Group.Members.Count);
     }
 }

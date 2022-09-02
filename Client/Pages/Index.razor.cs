@@ -33,4 +33,9 @@ public partial class Index : ComponentBase
     {
         State.Group.RemoveAt(pos);
     }
+
+    private void PlaceOrder()
+    {
+        Console.WriteLine("Place order");
+    }
 }

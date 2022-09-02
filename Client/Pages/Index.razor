@@ -66,3 +66,25 @@
     </div>
 }
 @* End developer group *@
+
+@* Customer entry *@
+
+<h1>Please enter your details</h1>
+
+<fieldset>
+    <div class="row mb-2">
+        <label for="name" class="col-2">Name</label>
+        <input id="name" @bind="State.Group.Customer.Name" />
+    </div>
+    <div class="row mb-2">
+        <label for="street" class="col-2">Street</label>
+        <input id="street" @bind="State.Group.Customer.Street" />
+    </div>
+    <div class="row mb-2">
+        <label for="city" class="col-2">City</label>
+        <input id="city" @bind="State.Group.Customer.City" />
+    </div>
+    <button class="btn btn-primary" @onclick="@(() => PlaceOrder())">Place order</button>
+</fieldset>
+
+@* End customer entry *@

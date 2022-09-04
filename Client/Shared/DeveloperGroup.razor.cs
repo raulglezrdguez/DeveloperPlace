@@ -18,7 +18,6 @@ namespace DeveloperPlace.Client.Shared
         [Parameter]
         public Func<int, Developer> GetDeveloperFromId { get; set; } = default!;
 
-        [Parameter]
         public IEnumerable<(Developer developer, int pos)> Developers { get; set; } = default!;
 
         private decimal TotalSalary { get; set; } = default!;

@@ -1,0 +1,30 @@
+@if (Members is not null && Members.Any()) {
+    <h1>Your current developer group</h1>
+
+    @foreach (var (developer, pos) in Developers)
+    {
+        <div class="row mb-2">
+            <div class="col">@developer.Name</div>
+            <div class="col text-right">@($"{developer.Salary:0.00}")</div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"><button class="btn btn-danger" 
+                @onclick="@(() => Selected.InvokeAsync(pos))">Remove</button></div>
+        </div>
+    }
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"><hr /></div>
+        <div class="col"> </div>
+        <div class="col"> </div>
+    </div>
+    <div class="row">
+        <div class="col"> Total:</div>
+        <div class="col text-right font-weight-bold"> @($"{TotalSalary:0.00}") </div>
+        <div class="col"> </div>
+        <div class="col"> </div>
+        <div class="col"> </div>
+    </div>
+} else {
+    <h1>You have not selected any developer</h1>
+}

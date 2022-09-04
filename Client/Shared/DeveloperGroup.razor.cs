@@ -25,8 +25,8 @@ namespace DeveloperPlace.Client.Shared
         protected override void OnParametersSet()
         {
             Developers = Members.Select((id, pos) => (developer: GetDeveloperFromId(id), pos: pos));
-            // TotalSalary = Developers.Sum(tuple => tuple.developer.Salary);
-            TotalSalary = Developers.Select(tuple => tuple.developer.Salary).Sum();
+            TotalSalary = Developers.Sum(tuple => tuple.developer.Salary);
+            // TotalSalary = Developers.Select(tuple => tuple.developer.Salary).Sum();
         }
     }
 }

@@ -15,37 +15,11 @@
 
 @* Developer group *@
 
-@if (State.Group.Members.Any()){
-    <h1>Your current developer group</h1>
+<DeveloperPlace.Client.Shared.DeveloperGroup
+    Members="@State.Group.Members"
+    Selected="@RemoveFromGroup"
+    GetDeveloperFromId="@State.DeveloperList.GetDeveloper" />
 
-    @foreach (var (developer, pos) in 
-        State.Group.Members.Select(
-            (id, pos) => (State.DeveloperList.GetDeveloper(id), pos)
-        )
-    )
-    {
-        <div class="row mb-2">
-            <div class="col">@developer?.Name</div>
-            <div class="col text-right">@($"{developer?.Salary:0.00}")</div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"><button class="btn btn-danger" @onclick="@(() => RemoveFromGroup(pos))">Remove</button></div>
-        </div>
-    }
-    <div class="row">
-        <div class="col"></div>
-        <div class="col"><hr /></div>
-        <div class="col"> </div>
-        <div class="col"> </div>
-    </div>
-    <div class="row">
-        <div class="col"> Total:</div>
-        <div class="col text-right font-weight-bold"> @($"{State.TotalSalary():0.00}") </div>
-        <div class="col"> </div>
-        <div class="col"> </div>
-        <div class="col"> </div>
-    </div>
-}
 @* End developer group *@
 
 @* Customer entry *@

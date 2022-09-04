@@ -1,0 +1,43 @@
+<h1>@Title</h1>
+
+<EditForm Model="@Customer" OnValidSubmit="@ValidSubmit">
+
+    <DataAnnotationsValidator />
+
+    <ValidationSummary />
+
+    <fieldset>
+        <div class="row mb-2">
+            <label for="name" class="col-2">Name</label>
+            <InputText id="name" class="col-6" @bind-Value="@Customer.Name" />
+        </div>
+        <div class="row mb-2">
+            <div class="col-6 offset-2">
+                <ValidationMessage For="@(() => Customer.Name)" />
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label for="street" class="col-2">Street</label>
+            <InputText id="street" class="col-6"  @bind-Value="@Customer.Street" />
+        </div>
+        <div class="row mb-2">
+            <div class="col-6 offset-2">
+                <ValidationMessage For="@(() => Customer.Street)" />
+            </div>
+        </div>
+        <div class="row mb-2">
+            <label for="city" class="col-2">City</label>
+            <InputText id="city" class="col-6" @bind-Value="@Customer.City" />
+        </div>
+        <div class="row mb-2">
+            <div class="col-6 offset-2">
+                <ValidationMessage For="@(() => Customer.City)" />
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-4"></div>
+            <button type="submit" class="@ButtonClass">@ButtonTitle</button>
+            <div class="col-4"></div>
+        </div>
+    </fieldset>
+</EditForm>

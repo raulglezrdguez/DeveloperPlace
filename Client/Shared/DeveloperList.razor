@@ -1,0 +1,14 @@
+@if (Items is null || !Items.Any()) {
+    <div>Loading...</div>
+} else {
+    <h1>@Title</h1>
+
+    @foreach (var item in Items)
+    {
+        <DeveloperItem 
+            Developer="@item" 
+            ButtonClass="@ButtonClass"
+            ButtonTitle="@ButtonTitle"
+            Selected="@Selected" />
+    }
+}

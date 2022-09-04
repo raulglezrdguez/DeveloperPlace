@@ -1,0 +1,16 @@
+<div class="row mb-5">
+    <div class="col">
+        @Developer.Name
+    </div>
+    <div class="col text-right">
+        @($"{Developer.Salary:0.00}")
+    </div>
+    <div class="col"></div>
+    <div class="col">
+        <img src="@LevelImage(Developer.Level)" alt="@Developer.Level" />
+    </div>
+    <div class="col">
+        <button class="btn btn-success pl-4 pr-4" 
+            @onclick="@(() => Selected.InvokeAsync(Developer))">Select</button>
+    </div>
+</div>

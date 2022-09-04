@@ -4,31 +4,12 @@
 
 @* Developer List *@
 
-<h1>List of developers</h1>
-<div class="row mb-5">
-    <div class="col">Name</div>
-    <div class="col text-right">Salary</div>
-    <div class="col"></div>
-    <div class="col">Level</div>
-    <div class="col"></div>
-</div>
-@foreach (var developer in State.DeveloperList.Developers){
-    <div class="row mb-5">
-        <div class="col">
-            @developer.Name
-        </div>
-        <div class="col text-right">
-            @($"{developer.Salary:0.00}")
-        </div>
-        <div class="col"></div>
-        <div class="col">
-            <img src="@LevelImage(developer.Level)" alt="@developer.Level" />
-        </div>
-        <div class="col">
-            <button class="btn btn-success pl-4 pr-4" @onclick="@(() => SelectDeveloper(developer))">Select</button>
-        </div>
-    </div>
-}
+<DeveloperPlace.Client.Shared.DeveloperList
+    Title="List of developers"
+    Items="@State.DeveloperList.Developers"
+    ButtonTitle="Select"
+    ButtonClass="btn btn-success pl-4 pr-4"
+    Selected="@SelectDeveloper" />
 
 @* End developer list *@
 

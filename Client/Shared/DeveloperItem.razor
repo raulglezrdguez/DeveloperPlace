@@ -10,7 +10,7 @@
         <img src="@LevelImage(Developer.Level)" alt="@Developer.Level" />
     </div>
     <div class="col">
-        <button class="btn btn-success pl-4 pr-4" 
-            @onclick="@(() => Selected.InvokeAsync(Developer))">Select</button>
+        <button class="@ButtonClass" 
+            @onclick="@(() => Selected.InvokeAsync(Developer))">@ButtonTitle</button>
     </div>
 </div>

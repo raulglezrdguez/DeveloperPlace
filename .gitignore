@@ -1,12 +1,9 @@
 .vs/
-bin/
-Client/bin/
-Shared/bin/
-obj/
-Client/obj/
-Shared/obj/
+**/bin/
+**/obj/
 *.user
 artifacts/
 .vscode/
 .dotnet/
 *.binlog
+

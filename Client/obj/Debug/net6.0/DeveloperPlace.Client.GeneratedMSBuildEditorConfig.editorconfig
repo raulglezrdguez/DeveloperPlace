@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/raul/projects/dotnet/DeveloperPlace/Client/Shared/DeveloperItem.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0RldmVsb3Blckl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/raul/projects/dotnet/DeveloperPlace/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

@@ -197,14 +197,14 @@
       "netstandard.dll": "sha256-HhuK9zDkd1N7hODAEiNJ11VF8T54IgrM6hZfLHmHdqM=",
       "System.Private.CoreLib.dll": "sha256-dXaTqyg1PnXPiSwywpic1PVrd7P8Vb5tN0i0\/urdt3E=",
       "DeveloperPlace.Shared.dll": "sha256-7zpjwMsA5X34MV\/JV+cO3DMVGzcMToCkfFsgJ8K\/sBg=",
-      "DeveloperPlace.Client.dll": "sha256-7YPg7VTeArP7F5vYrtuWB0\/YZvpaWwXigct\/cszPCf4="
+      "DeveloperPlace.Client.dll": "sha256-8e4LtK5X2c4sB9dfICl1U61y60STw1\/zEzmpKuo80rE="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "DeveloperPlace.Shared.pdb": "sha256-eTg6\/\/j+qoyKMIDbt7z+k29rWLr4TUOozSZMfKxmBmc=",
-      "DeveloperPlace.Client.pdb": "sha256-2BYW8lwgx4BA7LGi+QWSHBJQii5bKBlNFVYVtEU1GKw="
+      "DeveloperPlace.Client.pdb": "sha256-2P0mTooNB8R0FMdJDdI0S6YQK9GUbuXvPKB3aDkYkMo="
     },
     "runtime": {
       "dotnet.6.0.8.lcu5rdo38a.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",

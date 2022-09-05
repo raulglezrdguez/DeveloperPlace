@@ -30,6 +30,11 @@ namespace DeveloperPlace.Client.Shared
         private void FieldChanged(string fieldName)
         {
             CustomerChanged.InvokeAsync(Customer);
+            isInvalid = !inputWatcher?.Validate() ?? false;
         }
+
+        private InputWatcher? inputWatcher = default!;
+
+        private bool isInvalid = true;
     }
 }

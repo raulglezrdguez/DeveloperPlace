@@ -6,7 +6,7 @@
 
     <ValidationSummary />
 
-    <InputWatcher FieldChanged="@FieldChanged" />
+    <InputWatcher FieldChanged="@FieldChanged" @ref="@inputWatcher" />
 
     <fieldset>
         <div class="row mb-2">
@@ -38,7 +38,9 @@
         </div>
         <div class="row mb-2">
             <div class="col-4"></div>
-            <button type="submit" class="@ButtonClass">@ButtonTitle</button>
+            <button type="submit" 
+                class="@ButtonClass" 
+                disabled="@isInvalid">@ButtonTitle</button>
             <div class="col-4"></div>
         </div>
     </fieldset>

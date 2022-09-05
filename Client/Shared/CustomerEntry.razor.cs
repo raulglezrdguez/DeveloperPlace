@@ -23,5 +23,13 @@ namespace DeveloperPlace.Client.Shared
 
         [Parameter]
         public EventCallback ValidSubmit { get; set; } = default!;
+
+        [Parameter]
+        public EventCallback<Customer> CustomerChanged { get; set; } = default!;
+
+        private void FieldChanged(string fieldName)
+        {
+            CustomerChanged.InvokeAsync(Customer);
+        }
     }
 }

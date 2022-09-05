@@ -28,7 +28,7 @@
     Title="Please enter your details"
     ButtonClass="btn btn-primary col-4"
     ButtonTitle="Place order"
-    Customer="@State.Group.Customer"
+    @bind-Customer="@State.Group.Customer"
     ValidSubmit="@PlaceOrder" />
 
 @* End customer entry *@
